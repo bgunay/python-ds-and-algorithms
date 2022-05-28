@@ -9,7 +9,11 @@ def pow(a, b):
 
 
 def pow(a, b, acc=1):
+    print("{} {} {}".format(a,b,acc))
     if b == 0:
         return acc
     else:
         return pow(a, b-1, acc*a)
+
+print(pow(33,2,1))
+
