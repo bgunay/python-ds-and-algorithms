@@ -9,6 +9,7 @@ def rec(arr, i, phrase, output):
     for word in arr[i]:
       phrase.append(word)
       rec(arr, i+1, phrase, output)
+      # backtrack
       phrase.pop()
 
 def phrases1(arr):
